@@ -1,0 +1,8 @@
+--- # Webserver
+# Added by gituser3
+ - hosts: webserver
+   user: test456
+   sudo: yes
+   tasks: 
+     - name: Install httpd
+       yum: name=httpd state=installed
